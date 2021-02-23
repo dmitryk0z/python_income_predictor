@@ -63,7 +63,6 @@ def get_data(data):
     bad_records = 0
     cleaned_dataset = []
 
-    # using only .strip() doesnt remove all spaces before/after comma so additionally decided to use replace().
     data = data.replace(', ', ',').replace(' ,', ',').strip().split('\n')
 
     for record in data:
